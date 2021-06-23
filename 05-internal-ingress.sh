@@ -1,5 +1,5 @@
 helm upgrade -i internal-ingress ingress-nginx/ingress-nginx \
-  --namespace msda00 \
+  --namespace msda000 \
   -f 05-internal-ingress-lb.yml \
   --set controller.replicaCount=1 \
   --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux \

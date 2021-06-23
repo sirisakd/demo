@@ -1,6 +1,6 @@
 RG="rg-demo-ate-dev-neu"
 IP="pip-demo-ate-dev-neu-00"
-NAMESPACE="msda00"
+NAMESPACE="msda000"
 PIP=$(az network public-ip show -g ${RG} -n ${IP})
 DNSLABEL=$(echo $PIP | jq .dnsSettings.domainNameLabel | tr -d '"')
 PUBLICIP=$(echo $PIP | jq .ipAddress | tr -d '"')

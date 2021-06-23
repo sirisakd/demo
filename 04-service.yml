@@ -31,7 +31,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: app01-svc-node
-  namespace: msda00
+  namespace: msda000
 spec:
   type: NodePort
   ports:

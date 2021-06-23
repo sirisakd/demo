@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app01
-  namespace: msda00
+  namespace: msda000
   labels:
     app: app01
     tier: frontend

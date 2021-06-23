@@ -20,7 +20,7 @@ metadata:
     # nginx.ingress.kubernetes.io/proxy-ssl-verify: "on"
 spec:
   rules:
-  - host: aprilpocpip00.westeurope.cloudapp.azure.com
+  - host: pip-demo-ate-dev-neu-00.westeurope.cloudapp.azure.com
     http:
       paths:
       - backend:

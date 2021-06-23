@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: pod01
-  namespace: msda00
+  namespace: msda000
   labels:
     app: app01
     tier: front
