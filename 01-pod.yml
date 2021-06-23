@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod01
+  namespace: msda00
+  labels:
+    app: app01
+    tier: front
+    type: web
+spec:
+  containers:
+  - name: nginx00
+    image: nginx
+    ports:
+    - containerPort: 80

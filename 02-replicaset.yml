@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: app01-front-web
+  namespace: msda00
+  labels:
+    app: app01
+    tier: frontend
+    type: web
+spec:
+  # modify replicas according to your case
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: frontend
+      app: app01
+  template:
+    metadata:
+      labels:
+        tier: frontend
+        app: app01
+    spec:
+      containers:
+      - name: nginx00
+        image: nginx

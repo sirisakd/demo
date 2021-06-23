@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app01
+  namespace: msda00
+  labels:
+    app: app01
+    tier: frontend
+    type: web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app01
+      tier: frontend
+      type: web
+  template:
+    metadata:
+      labels:
+        app: app01
+        tier: frontend
+        type: web
+    spec:
+      containers:
+      - name: nginx00
+        image: nginx
+        ports:
+        - containerPort: 80
